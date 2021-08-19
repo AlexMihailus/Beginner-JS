@@ -1,7 +1,7 @@
 let weight = 0;
 let recommendation = '';
 
-weightControl = (weight) => {
+let weightControl = (weight) => {
     if (weight < 4) {
         recommendation = 'Пора перекусить';
     } else if (weight >= 4 && weight <= 5.5) {

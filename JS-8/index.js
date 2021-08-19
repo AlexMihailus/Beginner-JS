@@ -1,4 +1,4 @@
-finalGrade = (grade, projects) => {
+let finalGrade = (grade, projects) => {
     if (grade > 90 || projects > 10) {
         return 100;
     } else if (grade > 75 || projects >= 5) {
