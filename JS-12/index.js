@@ -1,6 +1,6 @@
 let arrayBetweenTwoNumbers = (a, b) => {
     array = [];
-    for (var i = 0; a <= b; i++) {
+    for (i = 0; a <= b; i++) {
         array[i] = a++;
     }
     return array;
