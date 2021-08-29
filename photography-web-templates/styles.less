@@ -146,11 +146,11 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .header__img {
-    max-width: 100%;
-    width: 1200;
+    width: 100%;
     height: 848px;
     background-image: url(img/Header.jpg);
-    background-size: cover;
+    background-position: top center;
+	background-size: cover;
     background-attachment: fixed;
      
     display: flex;
@@ -164,6 +164,9 @@ h1, h2, h3, h4, h5, h6 {
 
     @media @notebook {
         font-size: 40px;
+    }
+    @media @mobile {
+        font-size: 20px;
     }
 }
 
@@ -189,16 +192,24 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .about__img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin-right: 30px;
     max-width: 100%;
     height: 396px;
-    &:hover {
-        box-shadow: 10px 10px #b3278d;
-    }    
-    @media @mobile {
+    img {
+        max-width: 100%;
+        width: 616px;
+        height: auto;
         &:hover {
-            box-shadow:none;
-        }    
+            box-shadow: 10px 10px #b3278d;
+        }
+        @media @mobile {
+            &:hover {
+                box-shadow:none;
+            }    
+        }
     }
 }
 
@@ -256,8 +267,15 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 150px;
 
     img {
+        max-width: 100%;
+        height: auto;
         &:hover {
             box-shadow: 10px 10px #b3278d;
+        }
+        @media @mobile {
+            &:hover {
+                box-shadow:none;
+            }    
         }
     }
 }
